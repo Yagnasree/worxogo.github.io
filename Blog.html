@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worxogo Insights – Behavior Perspectives Blog</title>
+<style>
+    :root{
+        --accent:#3F6AE3;
+        --text:#1F2937;
+        --muted:#6B7280;
+        --bg:#FFFFFF;
+        --radius:16px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    body{background:var(--bg);color:var(--text);line-height:1.55;}
+    a{text-decoration:none;color:var(--accent);}
+    header{padding:4rem 1rem 2rem;max-width:1100px;margin:auto;text-align:center;}
+    header h1{font-size:2.5rem;font-weight:700;margin-bottom:.5rem;}
+    header p{font-size:1.1rem;color:var(--muted);}
+    .filters{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin:2rem auto 1rem;}
+    .filter{padding:.5rem 1rem;border:1px solid var(--muted);border-radius:var(--radius);cursor:pointer;font-size:.85rem;transition:.2s;}
+    .filter.active, .filter:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+    .search{margin:1rem auto 3rem;max-width:400px;position:relative;}
+    .search input{width:100%;padding:.75rem 1rem;border:1px solid var(--muted);border-radius:var(--radius);font-size:1rem;}
+    .grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));max-width:1100px;margin:auto;padding:0 1rem 4rem;}
+    .post-card{border:1px solid #E5E7EB;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.25s;}
+    .post-card:hover{box-shadow:0 6px 18px rgba(0,0,0,.08);transform:translateY(-2px);}
+    .post-card img{width:100%;height:180px;object-fit:cover;}
+    .post-content{padding:1rem;flex:1;display:flex;flex-direction:column;}
+    .cat-pill{display:inline-block;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.03em;background:#F3F4F6;color:var(--accent);padding:.25rem .5rem;border-radius:12px;margin-bottom:.75rem;}
+    .post-content h3{font-size:1.25rem;margin-bottom:.75rem;line-height:1.3;}
+    .post-content p{color:var(--muted);font-size:.9rem;flex:1;}
+    .read-more{margin-top:1rem;font-weight:600;}
+    footer{background:#F9FAFB;padding:3rem 1rem;text-align:center;}
+    footer h2{font-size:1.5rem;margin-bottom:1rem;}
+    footer a.cta{display:inline-block;background:var(--accent);color:#fff;padding:.75rem 1.5rem;border-radius:var(--radius);font-weight:600;}
+    @media (prefers-color-scheme: dark){
+        body{background:#111827;color:#F9FAFB;}
+        .post-card{border-color:#374151;}
+        .cat-pill{background:#1F2937;color:#93C5FD;}
+        .filter{border-color:#374151;color:#E5E7EB;}
+        .filter.active, .filter:hover{background:#2563EB;color:#fff;}
+        .search input{background:#1F2937;border-color:#374151;color:#E5E7EB;}
+        header p{color:#9CA3AF;}
+        footer{background:#1F2937;}
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Behavior Perspectives</h1>
+    <p>Actionable insights on AI, motivation &amp; high‑performing teams — straight from Worxogo’s Behavior Labs.</p>
+</header>
+
+<section class="filters" id="filterBar">
+    <span class="filter active" data-filter="all">All</span>
+    <span class="filter" data-filter="Pharma">Pharma</span>
+    <span class="filter" data-filter="Leadership">Leadership</span>
+    <span class="filter" data-filter="AI">AI</span>
+    <span class="filter" data-filter="Managers">Managers</span>
+    <span class="filter" data-filter="GCC">GCC</span>
+</section>
+
+<div class="search">
+    <input type="text" id="searchInput" placeholder="Search articles…">
+</div>
+
+<section class="grid" id="postsGrid">
+
+    <!-- Post 1 -->
+    <article class="post-card" data-category="Pharma">
+        <img src="https://www.worxogo.com/wp-content/uploads/2025/05/pexels-shvetsa-3683074-1568x1045.jpg" alt="Pharma pills in box">
+        <div class="post-content">
+            <span class="cat-pill">Pharma</span>
+            <h3>Can Behavior Science Drive Commercial Excellence in Pharma?</h3>
+            <p>Sun Pharma’s Vivek Khanvilkar explains how behavior science is transforming commercial excellence across the pharma value‑chain.</p>
+            <a class="read-more" href="https://www.worxogo.com/can-behavior-science-drive-commercial-excellence-in-pharma-vivek-khanvilkar/" target="_blank">Read more →</a>
+        </div>
+    </article>
+
+    <!-- Post 2 -->
+    <article class="post-card" data-category="Leadership">
+        <img src="https://www.worxogo.com/wp-content/uploads/2025/03/blogbanenr.jpg" alt="Leader coaching team">
+        <div class="post-content">
+            <span class="cat-pill">Leadership</span>
+            <h3>Leader as a Coach — and How AI Supercharges the Model</h3>
+            <p>From command‑and‑control to coaching: five reasons the “leader‑as‑coach” style wins, plus practical AI tools that make it stick.</p>
+            <a class="read-more" href="https://www.worxogo.com/leader-as-a-coach-with-ai/" target="_blank">Read more →</a>
+        </div>
+    </article>
+
+    <!-- Post 3 -->
+    <article class="post-card" data-category="AI">
+        <img src="https://www.worxogo.com/wp-content/uploads/2025/02/Optimizing-Your-Computers-Memory-1200-x-800-px.png" alt="Team looking at laptop">
+        <div class="post-content">
+            <span class="cat-pill">AI</span>
+            <h3>Build Connection &amp; Purpose with AI</h3>
+            <p>Gallup calls it “The Great Detachment.” Discover three AI‑powered nudges that re‑engage disconnected teams in a hybrid world.</p>
+            <a class="read-more" href="https://www.worxogo.com/build-connection-purpose-with-ai/" target="_blank">Read more →</a>
+        </div>
+    </article>
+
+    <!-- Post 4 -->
+    <article class="post-card" data-category="Managers">
+        <img src="https://www.worxogo.com/wp-content/uploads/2024/11/desola-lanre-ologun-IgUR1iX0mqM-unsplash.jpg" alt="Manager coaching teammate">
+        <div class="post-content">
+            <span class="cat-pill">Managers</span>
+            <h3>How GCC Leaders Use AI to Boost Manager Effectiveness</h3>
+            <p>Why middle managers still matter — and how behavior‑based AI helps leaders shape coaching habits that drive performance.</p>
+            <a class="read-more" href="https://www.worxogo.com/how-gcc-leaders-use-ai-to-improve-manager-effectiveness/" target="_blank">Read more →</a>
+        </div>
+    </article>
+
+    <!-- Post 5 -->
+    <article class="post-card" data-category="Pharma">
+        <img src="https://www.worxogo.com/wp-content/uploads/2024/10/pharma_blog.jpg" alt="Pharma rep with pills bottle">
+        <div class="post-content">
+            <span class="cat-pill">Pharma</span>
+            <h3>Improving Pharma Sales Effectiveness with Behavior Intelligence</h3>
+            <p>Move beyond CRMs: see how behavior‑intelligent nudges help reps turn data into action and managers into real‑time coaches.</p>
+            <a class="read-more" href="https://www.worxogo.com/improving-pharma-sales-effectiveness-with-behavior-intelligence/" target="_blank">Read more →</a>
+        </div>
+    </article>
+
+    <!-- Post 6 -->
+    <article class="post-card" data-category="GCC">
+        <img src="https://www.worxogo.com/wp-content/uploads/2024/11/Optimizing-Your-Computers-Memory-1-1568x882.png" alt="Contact‑center agent wearing headset">
+        <div class="post-content">
+            <span class="cat-pill">GCC</span>
+            <h3>Beyond Paychecks: Behavior Science for Productive GCC Teams</h3>
+            <p>Money isn’t enough. Explore intrinsic‑motivation strategies that help GCC managers build happier, higher‑output teams.</p>
+            <a class="read-more" href="https://www.worxogo.com/gcc-managers-productive-teams/" target="_blank">Read more →</a>
+        </div>
+    </article>
+
+</section>
+
+<footer>
+    <h2>Ready to nudge your team to peak performance?</h2>
+    <a class="cta" href="https://www.worxogo.com/" target="_blank">Get a demo</a>
+</footer>
+
+<script>
+const filters = document.querySelectorAll('.filter');
+const cards = document.querySelectorAll('.post-card');
+filters.forEach(f => f.addEventListener('click', () => {
+    filters.forEach(x => x.classList.remove('active'));
+    f.classList.add('active');
+    const cat = f.dataset.filter;
+    cards.forEach(c => {
+        c.style.display = (cat === 'all' || c.dataset.category === cat) ? 'flex' : 'none';
+    });
+    document.getElementById('searchInput').value=''; // reset search
+}));
+
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase();
+    cards.forEach(c => {
+        const text = c.innerText.toLowerCase();
+        c.style.display = text.includes(term) ? 'flex' : 'none';
+    });
+});
+</script>
+
+</body>
+</html>

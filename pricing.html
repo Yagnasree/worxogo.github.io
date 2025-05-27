@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worxogo – Custom Pricing</title>
+  <style>
+    :root {
+      --primary: #ff6a00; /* Worxogo brand orange */
+      --secondary: #004e8c; /* Deep blue accent */
+      --gray: #f5f7fa;
+      --dark: #1f2d3d;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      color: var(--dark);
+      background: #ffffff;
+      line-height: 1.55;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    /* ---------- HERO ---------- */
+    header {
+      background: var(--gray);
+      padding: 4rem 0 5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.125rem;
+      max-width: 600px;
+      margin: 0.5rem auto 2.5rem;
+      color: #334155;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.25s ease;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .btn-outline {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      margin-left: 1rem;
+    }
+    .btn-outline:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+    /* ---------- BENEFITS ---------- */
+    .benefits {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      padding: 4rem 0 5rem;
+    }
+    .benefit-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: transform 0.2s;
+    }
+    .benefit-card:hover {
+      transform: translateY(-4px);
+    }
+    .benefit-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--secondary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .benefit-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .benefit-card p {
+      font-size: 0.95rem;
+      color: #475569;
+    }
+    /* ---------- TRUSTED BY ---------- */
+    .trusted {
+      background: var(--gray);
+      padding: 4.5rem 0 5rem;
+      text-align: center;
+    }
+    .trusted h2 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 2.5rem;
+      color: var(--dark);
+    }
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+    .logo-grid img {
+      max-width: 100%;
+      max-height: 40px;
+      object-fit: contain;
+      filter: grayscale(1);
+      opacity: 0.8;
+      transition: opacity 0.25s;
+    }
+    .logo-grid img:hover {
+      opacity: 1;
+      filter: grayscale(0);
+    }
+    /* ---------- CONTACT SECTION ---------- */
+    .contact {
+      padding: 5rem 0 6rem;
+    }
+    .contact h2 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+    .contact p {
+      text-align: center;
+      color: #475569;
+      margin-bottom: 2.5rem;
+      font-size: 1.05rem;
+    }
+    form {
+      max-width: 640px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1.25rem;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border 0.2s;
+    }
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(255,106,0,0.15);
+    }
+    button[type="submit"] {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.25s, transform 0.25s;
+    }
+    button[type="submit"]:hover {
+      background: #e65c00;
+      transform: translateY(-2px);
+    }
+    /* ---------- FAQ ---------- */
+    details {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+    }
+    details[open] summary {
+      margin-bottom: 0.75rem;
+    }
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: var(--dark);
+      color: #cbd5e1;
+      font-size: 0.9rem;
+      padding: 2rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- HERO -->
+  <header>
+    <div class="container">
+      <h1>Maximise Performance with AI‑Powered Nudges</h1>
+      <p>Every organisation is unique. Worxogo tailors its pricing to your team size, roles, and goals—so you only pay for the value you unlock.</p>
+      <a href="#contact" class="btn btn-primary">Request Custom Quote</a>
+      <a href="#contact" class="btn btn-outline">Book a Demo</a>
+    </div>
+  </header>
+
+  <!-- BENEFITS -->
+  <section class="container benefits">
+    <div class="benefit-card">
+      <div class="benefit-icon">🚀</div>
+      <h3>Proven Productivity Lift</h3>
+      <p>Customers report up to 18% increase in key KPIs within 90 days of rollout.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">🎯</div>
+      <h3>Hyper‑Personalised Nudges</h3>
+      <p>Our behavioral AI adapts messaging to each employee’s motivation style for maximum impact.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">⚡</div>
+      <h3>Rapid Deployment</h3>
+      <p>Cloud‑first architecture gets you live in as little as 4 weeks—no IT headaches.</p>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY -->
+  <section class="trusted">
+    <div class="container">
+      <h2>Trusted by Global Enterprises</h2>
+      <div class="logo-grid">
+        <img src="https://via.placeholder.com/120x40?text=Client+Logo" alt="Client logo" />
+        <img src="https://via.placeholder.com/120x40?text=Client+Logo" alt="Client logo" />
+        <img src="https://via.placeholder.com/120x40?text=Client+Logo" alt="Client logo" />
+        <img src="https://via.placeholder.com/120x40?text=Client+Logo" alt="Client logo" />
+        <img src="https://via.placeholder.com/120x40?text=Client+Logo" alt="Client logo" />
+        <img src="https://via.placeholder.com/120x40?text=Client+Logo" alt="Client logo" />
+        <img src="https://via.placeholder.com/120x40?text=Client+Logo" alt="Client logo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Sales for Tailored Pricing</h2>
+      <p>Fill in a few details and our team will craft a proposal aligned to your goals—usually within one business day.</p>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Work Email" required />
+        <input type="text" name="company" placeholder="Company Name" required />
+        <select name="team_size" required>
+          <option value="" disabled selected>Team Size</option>
+          <option value="1-50">1–50</option>
+          <option value="51-200">51–200</option>
+          <option value="201-1000">201–1000</option>
+          <option value="1000+">1000+</option>
+        </select>
+        <textarea name="notes" rows="4" placeholder="Anything we should know? (Optional)"></textarea>
+        <button type="submit">Request Quote</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container" style="padding: 0 0 5rem;">
+    <details>
+      <summary>Is there a setup or onboarding fee?</summary>
+      <p style="margin-top: .5rem; color:#475569;">Implementation fees depend on the modules you choose and data integrations required, but many customers qualify for waived onboarding when signing annual agreements.</p>
+    </details>
+    <details>
+      <summary>Do you offer volume discounts?</summary>
+      <p style="margin-top: .5rem; color:#475569;">Yes. Per‑user pricing drops significantly for larger deployments. Our team will outline the savings bands in your proposal.</p>
+    </details>
+    <details>
+      <summary>What support is included?</summary>
+      <p style="margin-top: .5rem; color:#475569;">All plans include a dedicated customer success manager, quarterly business reviews, and 24×7 email support. Premium SLAs are available.</p>
+    </details>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      © 2025 Worxogo Solutions Pvt. Ltd. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

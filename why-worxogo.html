@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why worxogo</title>
+<style>
+body {margin:0;font-family: 'Inter', Arial, sans-serif; line-height:1.6; color:#1e1e1e; background:#fff;}
+a{color:#0074ff;text-decoration:none;}
+header{background:#f5f7fa;padding:80px 20px;text-align:center;}
+header h1{font-size:2.8rem;margin:0 0 10px;font-weight:700;}
+header p{font-size:1.25rem;margin:0 auto 20px;max-width:700px;}
+.btn-primary{display:inline-block;padding:14px 32px;background:#0074ff;border-radius:8px;color:#fff;font-weight:600;transition:background .2s;}
+.btn-primary:hover{background:#005fd1}
+
+section{padding:80px 20px;max-width:1100px;margin:0 auto;}
+section h2{font-size:2rem;margin-bottom:20px;}
+section p{font-size:1.1rem;margin-bottom:16px;}
+
+.three-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;}
+
+.card{background:#ffffff;border:1px solid #e5e8ec;border-radius:16px;padding:32px;box-shadow:0 8px 24px rgba(0,0,0,0.05);transition:transform .2s;}
+.card:hover{transform:translateY(-4px);}
+.card h3{display:flex;align-items:center;font-size:1.5rem;margin-bottom: 12px;}
+.card h3 span{font-size:1.75rem;margin-right:8px;}
+
+ul.features{list-style:none;padding:0;margin:0;}
+ul.features li{padding-left:28px;position:relative;margin-bottom:12px;}
+ul.features li::before{content:'✔';position:absolute;left:0;top:0;color:#0074ff;font-weight:bold;}
+
+.cta{background:#0074ff;color:#fff;text-align:center;padding:60px 20px;}
+.cta h2{color:#fff;margin-bottom:20px;font-size:2rem;}
+.cta-buttons{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:32px;}
+.cta-buttons a{background:#fff;color:#0074ff;padding:12px 24px;border-radius:6px;font-weight:600;transition:background .2s;}
+.cta-buttons a:hover{background:#f4f6fc;color:#0074ff;}
+
+@media (prefers-color-scheme: dark) {
+  body{background:#121212;color:#f0f0f0;}
+  header{background:#1e1e1e;}
+  .card{background:#1e1e1e;border-color:#333;box-shadow:none;}
+  .btn-primary{background:#0a84ff;}
+  .cta{background:#0a84ff;}
+  .cta-buttons a{background:#1e1e1e;color:#fff;}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Why worxogo</h1>
+  <p>Sustained performance isn’t luck. It’s a habit.</p>
+  <p>Most teams know how to deliver high performance occasionally—but they struggle to sustain it. That’s where worxogo comes in.</p>
+  <p>We help your frontline teams build the kind of habits that improve performance and lead to consistent, compounding results—day after day.</p>
+  <a href="#book-demo" class="btn-primary">Book a Demo</a>
+</header>
+
+<section id="challenge">
+  <h2>Why Sustained Performance is So Hard</h2>
+  <p>Motivation fades. Manual tracking is a chore. Dashboards don’t change behavior.</p>
+  <p>Sustained performance doesn’t come from more data. It comes from better habits.</p>
+</section>
+
+<section id="framework">
+  <h2>The worxogo Behavior Framework</h2>
+  <p>Backed by behavioral science. Built for the frontline. Designed for teams that want to win—and keep winning.</p>
+
+  <div class="three-col">
+    <div class="card">
+      <h3><span>🕹️</span> Performance Autonomy</h3>
+      <p>Give your team ownership, and they’ll take responsibility.</p>
+      <ul class="features">
+        <li>AI Nudges: Daily prompts that guide action, not micromanage it</li>
+        <li>Performance Scorecards: Real‑time feedback that puts performance in their hands</li>
+      </ul>
+      <p>We don’t tell them what to do. We coach them to own it.</p>
+    </div>
+
+    <div class="card">
+      <h3><span>🧠</span> Ability &amp; Learning</h3>
+      <p>If they’re not improving, they’re plateauing. Training can’t be a once‑a‑year event.</p>
+      <ul class="features">
+        <li>Microlearning: AI‑personalized lessons—bite‑sized and on‑point</li>
+        <li>Quizzes: Reinforce skills without feeling like school</li>
+        <li>Smart Nudges: Reinforce the right concepts at just the right time</li>
+      </ul>
+      <p>Your teams learn faster, retain more, and apply better.</p>
+    </div>
+
+    <div class="card">
+      <h3><span>💬</span> Review &amp; Coaching</h3>
+      <p>Managers don’t need more reports. They need better timing.</p>
+      <ul class="features">
+        <li>Nudges help managers know who to coach, when, and on what</li>
+        <li>Insights turn check‑ins into real performance conversations</li>
+      </ul>
+      <p>It’s not about more meetings. It’s about better ones.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="book-demo">
+  <h2>Ready to turn performance into a habit?</h2>
+  <a href="#" class="btn-primary">Book a Demo</a>
+  <div class="cta-buttons">
+    <a href="#">Sales Teams &rarr;</a>
+    <a href="#">Customer Support Teams &rarr;</a>
+    <a href="#">Back‑office Ops &rarr;</a>
+  </div>
+</section>
+
+</body>
+</html>

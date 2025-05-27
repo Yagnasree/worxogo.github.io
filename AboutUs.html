@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us | Worxogo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Optional icon set for small embellishments -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{
+      --primary:#0F3D57; --accent:#00B5AD; --light:#F5F9FC; --dark:#052732;
+      --radius:12px; --shadow:0 10px 25px rgba(0,0,0,.07);
+      --font-header:'Inter',sans-serif; --font-body:'Inter',sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:var(--font-body);}
+    body{color:var(--dark);line-height:1.6;background:var(--light);}
+    h1,h2,h3{font-family:var(--font-header);font-weight:700;margin-bottom:.6em;}
+    section{padding:4rem 1.25rem;max-width:1080px;margin:auto;}
+    .hero{background:#fff;text-align:center;padding-top:5rem;padding-bottom:5rem;}
+    .hero h1{font-size:2.5rem;color:var(--primary);}
+    .intro p{max-width:800px;margin:0 auto 1.8rem auto;font-size:1.1rem;}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2rem;text-align:center;}
+    .stat-box{background:#fff;padding:2.2rem 1rem;border-radius:var(--radius);box-shadow:var(--shadow);}
+    .stat-box span{display:block;font-size:2rem;font-weight:700;color:var(--accent);}
+    /* Team cards */
+    .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;margin-top:2rem;}
+    .card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .25s;}
+    .card:hover{transform:translateY(-6px);}
+    .card img{width:100%;height:260px;object-fit:cover;}
+    .card-body{padding:1.25rem;}
+    .card-body h3{margin-bottom:.25rem;font-size:1.2rem;color:var(--primary);}
+    .card-body p{font-size:.92rem;color:#555;}
+    /* Accordion for extended bios */
+    details{border-top:1px solid #e1e7ec;padding:1rem 0;}
+    summary{cursor:pointer;font-weight:600;list-style:none;position:relative;padding-left:1.5rem;}
+    summary::before{content:"\f078";font-family:"Font Awesome 6 Free";font-weight:900;
+                     position:absolute;left:0;top:0;color:var(--accent);}
+    summary::-webkit-details-marker{display:none;}
+    details[open] summary::before{transform:rotate(180deg);}
+    /* CTA */
+    .cta{background:var(--primary);color:#fff;text-align:center;border-radius:var(--radius);}
+    .cta h2{color:#fff;margin-bottom:1rem;}
+    .cta a{display:inline-block;margin-top:1rem;padding:.9rem 2.2rem;background:var(--accent);
+           color:#fff;border-radius:var(--radius);text-decoration:none;font-weight:600;}
+    @media (min-width:600px){.hero h1{font-size:3rem;}}
+  </style>
+</head>
+
+<body>
+
+<!-- HERO & MISSION -->
+<section class="hero">
+  <h1>Leveraging Behavior Science to Build High-Performing Teams</h1>
+  <p class="intro">
+    Worxogo’s AI-powered Nudge Coach turns neuroscience research into daily performance
+    wins for sales, customer-service and back-office teams.
+  </p>
+</section>
+
+<!-- STORY -->
+<section>
+  <h2>Our Story</h2>
+  <p>
+    Founded in 2014, Worxogo began with a simple question: <em>could science-backed nudges
+    unlock the next level of sales productivity?</em> Partnering with Stanford’s
+    Prof.&nbsp;Baba Shiv—the world authority on Neuroeconomics—our seven co-founders built
+    an engine that blends cutting-edge behavior design with self-learning AI.
+  </p>
+  <p>
+    Today, the award-winning Worxogo Nudge Coach drives consistent,
+    measurable productivity gains by adding a “behavior layer” to enterprise CRMs—
+    no extra data entry required.
+  </p>
+</section>
+
+<!-- IMPACT STATS -->
+<section>
+  <h2>Our Impact in Numbers</h2>
+  <div class="stats">
+    <div class="stat-box"><span>1 M+</span>Sales behaviors assessed weekly</div>
+    <div class="stat-box"><span>300 K</span>Nudges delivered every week</div>
+    <div class="stat-box"><span>60+</span>Enterprise deployments</div>
+    <div class="stat-box"><span>70 K+</span>Employees coached globally</div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section>
+  <h2>Trust at Our Core</h2>
+  <p>
+    Worxogo is ISO&nbsp;27001:2013 certified. Our Information Security Management
+    System protects application, network, cloud and data layers—earning the trust of
+    clients across Banking, Insurance, Pharma, BPO and more.
+  </p>
+</section>
+
+<!-- LEADERSHIP TEAM -->
+<section>
+  <h2>Meet the Leadership Team</h2>
+  <div class="team-grid">
+      <!-- Card 1 -->
+      <article class="card">
+        <img src="https://via.placeholder.com/400x260?text=CEO" alt="CEO photo">
+        <div class="card-body">
+          <h3>Sanjay Deshpande</h3>
+          <p>Chief Executive Officer</p>
+          <details>
+            <summary>Read bio</summary>
+            <p>
+              Sanjay brings 20+ years leading AI-driven transformations at PwC and IBM.
+              At Worxogo, he champions the “Authority” persuasion mechanic—aligning
+              strategy with scientific rigor.
+            </p>
+          </details>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <img src="https://via.placeholder.com/400x260?text=Founder" alt="Founder photo">
+        <div class="card-body">
+          <h3>Ananya Roy</h3>
+          <p>Founder &amp; Chief Behaviour Officer</p>
+          <details>
+            <summary>Read bio</summary>
+            <p>
+              A former KPMG consultant, Ananya architects the behavioral algorithms that
+              power our Nudge Coach, focusing on “Self-Awareness” and “Appropriate Challenge.”
+            </p>
+          </details>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <img src="https://via.placeholder.com/400x260?text=CFO" alt="CFO photo">
+        <div class="card-body">
+          <h3>Ravi Menon</h3>
+          <p>Chief Financial Officer</p>
+          <details>
+            <summary>Read bio</summary>
+            <p>
+              Ravi oversees financial stewardship and global expansion, ensuring every
+              nudge translates into sustainable value for clients and shareholders alike.
+            </p>
+          </details>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card">
+        <img src="https://via.placeholder.com/400x260?text=CMO" alt="CMO photo">
+        <div class="card-body">
+          <h3>Priya Shah</h3>
+          <p>Chief Marketing Officer</p>
+          <details>
+            <summary>Read bio</summary>
+            <p>
+              Priya narrates the Worxogo story worldwide, blending “Social Proof” with
+              customer success data to showcase tangible productivity gains.
+            </p>
+          </details>
+        </div>
+      </article>
+  </div>
+</section>
+
+<!-- CALL-TO-ACTION -->
+<section class="cta">
+  <h2>Want to be part of the story?</h2>
+  <p>Explore careers where behavioral science meets AI innovation.</p>
+  <a href="/careers">View Open Roles</a>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worxogo | Our Science</title>
+
+  <!--  Font Awesome for icons (loads from CDN)  -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnH1z8a03bblpGmEuO8tOeGxj2WzJXGu7wDDh6yqShcE2grwYeo7Nm7FAhFtt943SPpZ6Uu3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!--  Simple brand-flavoured styling  -->
+  <style>
+    :root {
+      --clr-primary: #0068ff;    /* Worxogo blue (adjust if needed) */
+      --clr-accent:  #00c18e;    /* Worxogo green */
+      --clr-dark:    #0d1a26;
+      --clr-light:   #f8fbff;
+      --radius: 0.8rem;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--clr-dark); line-height: 1.6; background: var(--clr-light); }
+    h1,h2,h3 { font-weight: 700; line-height: 1.25; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); }
+    h2 { font-size: 1.75rem; margin-bottom: .5rem; }
+    h3 { font-size: 1.25rem; color: var(--clr-primary); }
+    p  { margin: .75rem 0; }
+
+    /* Layout helpers */
+    .container { width: min(92%, 1150px); margin-inline: auto; }
+    section     { padding: 3.5rem 0; }
+    .grid       { display: grid; gap: 2rem; }
+    @media (min-width: 768px) {
+      .grid-2   { grid-template-columns: repeat(2,1fr); align-items: center; }
+    }
+
+    /* Hero */
+    .hero { text-align: center; background: linear-gradient(135deg, var(--clr-primary), var(--clr-accent)); color: #fff; padding: 4rem 1rem; }
+    .hero p { font-size: 1.125rem; max-width: 650px; margin-inline: auto; opacity: .9; }
+
+    /* Card */
+    .card { background: #fff; border-radius: var(--radius); box-shadow: 0 6px 18px rgba(0,0,0,.08); padding: 2rem; }
+    .card img.logo { width: 180px; height: auto; margin-bottom: 1rem; }
+    .stat { font-size: 2.5rem; font-weight: 800; color: var(--clr-accent); }
+    .cta-btn { display: inline-block; margin-top: 1.25rem; background: var(--clr-primary); color: #fff; padding: .75rem 1.5rem; border-radius: var(--radius); text-decoration: none; transition: background .3s; }
+    .cta-btn:hover { background: #004ec0; }
+
+    /* Icons list */
+    .icon-list { list-style: none; display: flex; gap: 1rem; flex-wrap: wrap; }
+    .icon-list li { display: flex; align-items: center; gap: .5rem; font-size: .95rem; }
+
+    /* Video embeds */
+    .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; width: 100%; border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,.1); }
+    .video-wrapper iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+    /* Footer CTA */
+    .footer-cta { background: var(--clr-primary); color: #fff; text-align: center; padding: 3rem 1rem; }
+    .footer-cta h2 { color: #fff; }
+    .footer-cta p  { opacity: .9; }
+  </style>
+</head>
+
+<body>
+  <!--  HERO  -->
+  <header class="hero">
+    <h1>The Science Behind Worxogo</h1>
+    <p>
+      Groundbreaking academic collaborations, peer-reviewed studies, and
+      real-world evidence—proof that behavioral science <em>amplifies</em> performance.
+    </p>
+  </header>
+
+  <main>
+    <!--  STANFORD COLLAB  -->
+    <section id="stanford">
+      <div class="container grid grid-2">
+        <div class="card">
+          <img src="stanford-logo.png" alt="Stanford University logo" class="logo" />
+          <h2>Collaboration with Stanford</h2>
+          <p><strong>Stanford University – Worxogo collaboration finds Nudges increase sales productivity up to <span class="stat">28 %</span>!</strong></p>
+          <p>
+            To continue to push the boundaries of seller productivity using behavior science, worxogo announced a joint research collaboration with
+            <em>Prof. Szu-chi Huang</em>, Associate Professor at the Stanford Graduate School of Business.
+          </p>
+          <ul class="icon-list">
+            <li><i class="fa-solid fa-flask"></i> Social Dynamics in Goal Pursuit</li>
+            <li><i class="fa-solid fa-robot"></i> Artificial Intelligence &amp; Social Impact</li>
+          </ul>
+          <p>
+            The study explored how behavior science drives seller productivity and evaluated the impact of coaching nudges on seller behavior and improved productivity.
+          </p>
+          <a href="mailto:research@worxogo.com?subject=Stanford Study" class="cta-btn"><i class="fa-solid fa-envelope-open-text"></i> Request Full Study</a>
+        </div>
+
+        <!--  VIDEO  -->
+        <div>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/9l5BJXP64dM?rel=0"
+              title="Stanford × Worxogo Study Summary"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  HBR CASE STUDY  -->
+    <section id="hbr" style="background:#fff;">
+      <div class="container grid grid-2">
+        <div>
+          <div class="video-wrapper" style="border-radius:var(--radius);box-shadow:none;">
+            <!--  Replace with HBR cover if you have it; here’s a placeholder  -->
+            <img src="hbr-case-thumb.jpg" alt="HBR Store cover: Worxogo – Nudging for High Employee Performance" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+        <div class="card">
+          <img src="hbr-logo.png" alt="Harvard Business Review logo" class="logo" />
+          <h2>HBR Business Case Study</h2>
+          <p>
+            Worxogo is now a business case study available on the <strong>HBR Store</strong>! Grateful thanks to Professors Debolina Dutta and Varghees Joseph.
+          </p>
+          <p>
+            The future of resilient teams hinges on how they’re managed, and this case study is a powerful reminder of just how important behavioral science is in running great teams.
+          </p>
+          <p>
+            Managers who leverage these insights can truly shape the future of work. This study is more than just a spotlight on our Nudge Coach platform—it’s a validation that CEOs and business leaders are increasingly turning to behavioral science to lead high-performing teams.
+          </p>
+          <a href="https://store.hbr.org/product/worxogo-nudging-for-high-employee-performance/W36254" target="_blank" class="cta-btn">
+            <i class="fa-solid fa-book-open"></i> View on HBR Store
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--  MELINA PALMER  -->
+    <section id="melina" style="background:var(--clr-light);">
+      <div class="container grid grid-2">
+        <div class="card">
+          <img src="brainy-business-logo.png" alt="The Brainy Business Podcast logo" class="logo" />
+          <h2>Melina Palmer: Behavioral Science in Action</h2>
+          <p>
+            At the end of 2021, while doing research for her new book,
+            <em>What Your Employees Need and Can’t Tell You</em>, <strong>Melina Palmer</strong> met with co-founder <strong>Anant Sood</strong>.
+          </p>
+          <p>
+            Palmer included Worxogo in her book and dedicated an entire episode on her podcast to the Nudge Coach – “an awesome amalgamation of behavioral science and AI to help people be better managers, improve employee performance, and so much more.”
+          </p>
+          <a href="https://www.youtube.com/watch?v=UI3yeBZRkZ8" target="_blank" class="cta-btn">
+            <i class="fa-solid fa-podcast"></i> Listen to the Podcast
+          </a>
+        </div>
+        <div>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/UI3yeBZRkZ8?rel=0"
+              title="Brainy Business Podcast – Worxogo Episode"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  BABA SHIV STORY LINKS  -->
+    <section id="baba-shiv">
+      <div class="container card">
+        <h2><i class="fa-solid fa-lightbulb"></i> Foundational Insight with Prof. Baba Shiv</h2>
+        <p>
+          Worxogo’s journey began with Stanford’s renowned neuro-economist <strong>Prof. Baba Shiv</strong>. Dive deeper:
+        </p>
+        <ul class="icon-list" style="margin-top:.5rem;">
+          <li><i class="fa-solid fa-arrow-up-right-from-square"></i> <a href="https://www.worxogo.com/the-worxogo-story/" target="_blank">The Worxogo Story (2018)</a></li>
+          <li><i class="fa-solid fa-arrow-up-right-from-square"></i> <a href="https://www.worxogo.com/the-belief-that-shaped-worxogo/" target="_blank">The Belief That Shaped Worxogo (2020)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!--  FOOTER CTA  -->
+  <footer class="footer-cta">
+    <div class="container">
+      <h2>Ready to apply science to performance?</h2>
+      <p>Talk to our behavior-science team to see how nudges can lift your KPIs.</p>
+      <a href="mailto:hello@worxogo.com?subject=Tell me more about the science behind Worxogo" class="cta-btn">
+        <i class="fa-solid fa-envelope"></i> Contact Us
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

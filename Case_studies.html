@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Worxogo | Customer Success Stories</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    :root{
+        --brand:#F9B000;
+        --dark:#222;
+        --light:#fafafa;
+        --grey:#666;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Roboto,Arial,sans-serif;}
+    body{background:var(--light);color:var(--dark);line-height:1.5;}
+    header{background:#fff;padding:2rem 4%;box-shadow:0 2px 8px rgba(0,0,0,.05);position:sticky;top:0;z-index:1000;}
+    header h1{font-size:2rem;font-weight:700;}
+    header p{margin-top:.5rem;color:var(--grey);}
+    .cta-demo{display:inline-block;margin-top:1rem;padding:.75rem 1.5rem;background:var(--brand);color:#000;border-radius:8px;font-weight:600;text-decoration:none;transition:transform .2s;}
+    .cta-demo:hover{transform:translateY(-2px);}
+    .filters{display:flex;flex-wrap:wrap;gap:.5rem;padding:2rem 4%;}
+    .filter-btn{padding:.5rem 1rem;border:2px solid var(--brand);border-radius:24px;background:#fff;color:var(--dark);cursor:pointer;font-size:.9rem;transition:.2s;}
+    .filter-btn.active, .filter-btn:hover{background:var(--brand);}
+    .case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;padding:0 4% 4rem;}
+    .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.06);position:relative;transition:transform .25s;}
+    .card:hover{transform:translateY(-6px);}
+    .card img{width:100%;height:180px;object-fit:cover;}
+    .card-content{padding:1.25rem;}
+    .card h3{font-size:1.1rem;margin-bottom:.5rem;min-height:56px;}
+    .badge{position:absolute;top:12px;left:12px;background:var(--brand);color:#000;font-weight:700;padding:.25rem .6rem;border-radius:8px;font-size:.8rem;box-shadow:0 2px 6px rgba(0,0,0,.2);}
+    .card a{display:inline-block;margin-top:.75rem;color:var(--brand);font-weight:600;text-decoration:none;position:relative;}
+    .card a::after{content:"";position:absolute;left:0;bottom:-2px;width:100%;height:2px;background:var(--brand);transform:scaleX(0);transition:transform .2s;transform-origin:left;}
+    .card a:hover::after{transform:scaleX(1);}
+    @media(max-width:480px){
+        header h1{font-size:1.5rem;}
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Customer Success Stories</h1>
+    <p>Explore how industry leaders drive performance with Worxogo.<br><strong>Average 32% lift</strong> across <strong>17+ enterprises</strong>.</p>
+    <a href="https://www.worxogo.com/request-demo" class="cta-demo">Book a Demo</a>
+</header>
+
+<section class="filters" id="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="Banking">Banking</button>
+    <button class="filter-btn" data-filter="Financial Services">Financial Services</button>
+    <button class="filter-btn" data-filter="Transportation & Logistics">Transportation & Logistics</button>
+    <button class="filter-btn" data-filter="Insurance">Insurance</button>
+    <button class="filter-btn" data-filter="BPO / Back-office">BPO / Back‑office</button>
+    <button class="filter-btn" data-filter="CPG">CPG</button>
+    <button class="filter-btn" data-filter="Auto Finance">Auto Finance</button>
+    <button class="filter-btn" data-filter="Manufacturing">Manufacturing</button>
+    <button class="filter-btn" data-filter="Retail / Fashion">Retail / Fashion</button>
+    <button class="filter-btn" data-filter="Pharma / Life Sciences">Pharma / Life Sciences</button>
+</section>
+
+<section class="case-grid" id="caseGrid">
+    <!-- Cards injected by JS -->
+</section>
+
+<script>
+const caseStudies = [
+    {"title":"How a $5 Billion Transportation Co. improved Sales Productivity by 28%","url":"https://www.worxogo.com/case-studies/transportation-sales-productivity-28","metric":28,"industry":"Transportation & Logistics","img":"https://source.unsplash.com/featured/?logistics"},
+    {"title":"How a Leading US Logistics Co. built a Resilient Back-office Team","url":"https://www.worxogo.com/case-studies/us-logistics-backoffice-resilience","metric":null,"industry":"BPO / Back-office","img":"https://source.unsplash.com/featured/?warehouse"},
+    {"title":"How a Fortune 50 Finserv GCC Boosted Team Engagement and Productivity","url":"D:/Worxogo Critical/Website/actual_case_study.html","metric":14,"industry":"Financial Services","img":"https://source.unsplash.com/featured/?finance"},
+    {"title":"How a Global Outsourcing Giant improved its NPS by 5%","url":"https://www.worxogo.com/case-studies/global-outsourcing-nps-5","metric":5,"industry":"BPO / Back-office","img":"https://source.unsplash.com/featured/?callcenter"},
+    {"title":"How a leading Indian bank increased product pitches by 130%","url":"https://www.worxogo.com/case-studies/indian-bank-product-pitches-130","metric":130,"industry":"Banking","img":"https://source.unsplash.com/featured/?bank"},
+    {"title":"How a leading FinServ Co. increased Sales by 40%","url":"https://www.worxogo.com/case-studies/finserv-sales-40","metric":40,"industry":"Financial Services","img":"https://source.unsplash.com/featured/?sales"},
+    {"title":"How one of India’s largest Private Banks increased Loan Disbursement by 26%","url":"https://www.worxogo.com/case-studies/private-bank-disbursement-26","metric":26,"industry":"Banking","img":"https://source.unsplash.com/featured/?loans"},
+    {"title":"How a CPG player increased activity by 28% and revenue by 9%","url":"https://www.worxogo.com/case-studies/cpg-activity-28-revenue-9","metric":28,"industry":"CPG","img":"https://source.unsplash.com/featured/?supermarket"},
+    {"title":"How a leading Auto Finance Co. increased Customer Connects by 31%","url":"https://www.worxogo.com/case-studies/auto-finance-connects-31","metric":31,"industry":"Auto Finance","img":"https://source.unsplash.com/featured/?car"},
+    {"title":"How a leading Credit Services Co. achieved 2x growth in direct channel disbursement","url":"https://www.worxogo.com/case-studies/credit-services-2x-disbursement","metric":null,"industry":"Financial Services","img":"https://source.unsplash.com/featured/?credit"},
+    {"title":"How a Leading Tyre Company Improved Premium Product Sales by 10%","url":"https://www.worxogo.com/case-studies/tyre-company-premium-sales-10","metric":10,"industry":"Manufacturing","img":"https://source.unsplash.com/featured/?factory"},
+    {"title":"How a Global American Insurance Co. enhanced their Customer Experience by 28%","url":"https://www.worxogo.com/case-studies/american-insurance-cx-28","metric":28,"industry":"Insurance","img":"https://source.unsplash.com/featured/?insurance"},
+    {"title":"How a Leading Finserv Company Increased Disbursements by 21%","url":"https://www.worxogo.com/case-studies/finserv-disbursement-21","metric":21,"industry":"Financial Services","img":"https://source.unsplash.com/featured/?disbursement"},
+    {"title":"How an Indian Fashion Major Improved Customer Service by 22%","url":"https://www.worxogo.com/case-studies/fashion-cx-22","metric":22,"industry":"Retail / Fashion","img":"https://source.unsplash.com/featured/?fashion"},
+    {"title":"How a global biopharma major grew wallet share of HCPs by 17%","url":"https://www.worxogo.com/case-studies/biopharma-hcp-wallet-17","metric":17,"industry":"Pharma / Life Sciences","img":"https://source.unsplash.com/featured/?pharma"},
+    {"title":"How a $10Bn Pharma Giant Increased In-Clinic Effectiveness by 48%","url":"https://www.worxogo.com/case-studies/pharma-giant-inclinic-48","metric":48,"industry":"Pharma / Life Sciences","img":"https://source.unsplash.com/featured/?clinic"},
+    {"title":"Improving Insurance Agent Productivity by 26%: A Real Case Study","url":"https://www.worxogo.com/case-studies/insurance-agent-productivity-26","metric":26,"industry":"Insurance","img":"https://source.unsplash.com/featured/?agent"}
+];
+
+const grid = document.getElementById('caseGrid');
+
+function renderCards(filter='all'){
+    grid.innerHTML='';
+    caseStudies.filter(cs=>filter==='all'||cs.industry===filter)
+               .forEach(cs=>{
+                   const card=document.createElement('div');
+                   card.className='card';
+                   card.setAttribute('data-industry',cs.industry);
+                   card.innerHTML=`
+                       ${cs.metric?`<div class="badge">${cs.metric}${Number(cs.metric)<10?'':'%'}${cs.metric && cs.metric<10?'':'%'}</div>`:''}
+                       <img src="${cs.img}" alt="${cs.industry}">
+                       <div class="card-content">
+                           <h3>${cs.title}</h3>
+                           <a href="${cs.url}" target="_blank" rel="noopener">Read Story →</a>
+                       </div>
+                   `;
+                   grid.appendChild(card);
+               });
+}
+
+renderCards();
+
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        renderCards(btn.dataset.filter);
+    });
+});
+</script>
+</body>
+</html>

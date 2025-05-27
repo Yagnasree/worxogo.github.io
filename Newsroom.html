@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worxogo&nbsp;| Newsroom&nbsp;&amp;&nbsp;Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-0z9UP5N4s/5+QvJfAaL+CZCmuqRb1X9ok6RX+JRQz4mP5XpwijvO+2p+3QwVWry/sA38nu1zr0UMIhQXk+T03A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root{
+      --primary:#0B5FFF;
+      --text:#1C1C1C;
+      --gray:#6B7280;
+      --bg:#F9FAFB;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Inter',sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.6;
+    }
+    a{color:var(--primary);text-decoration:none}
+    header{
+      background:#fff;
+      box-shadow:0 1px 4px rgba(0,0,0,.06);
+      position:sticky;top:0;z-index:999;
+    }
+    .nav-wrap{
+      max-width:1200px;
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:1rem 1.5rem;
+    }
+    .logo{
+      font-weight:700;
+      font-size:1.2rem;
+    }
+    nav ul{
+      display:flex;
+      gap:1.25rem;
+      list-style:none;
+    }
+    nav a{
+      font-weight:500;
+      transition:color .2s;
+    }
+    nav a:hover{color:#0543b8}
+    .btn-kit{
+      background:var(--primary);
+      color:#fff;
+      padding:.5rem 1rem;
+      border-radius:6px;
+      transition:background .2s;
+      font-size:.9rem;
+    }
+    .btn-kit:hover{background:#0543b8;color:#fff}
+    /* Hero */
+    .hero{
+      text-align:center;
+      padding:4rem 1rem 3rem;
+      background:#fff;
+      border-bottom:1px solid #e5e7eb;
+    }
+    .hero h1{
+      font-size:2.25rem;
+      font-weight:700;
+      margin-bottom:.75rem;
+    }
+    .hero p{color:var(--gray);max-width:700px;margin:auto;font-size:1.1rem}
+    /* Section */
+    section{
+      max-width:1100px;
+      margin:3rem auto;
+      padding:0 1.5rem;
+    }
+    .section-title{
+      font-size:1.75rem;
+      font-weight:600;
+      margin-bottom:1.5rem;
+      display:flex;
+      gap:.5rem;
+      align-items:center;
+    }
+    .section-title i{color:var(--primary)}
+    /* Cards */
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+      gap:1.5rem;
+    }
+    .card{
+      background:#fff;
+      border-radius:12px;
+      padding:1.25rem 1rem 1.5rem;
+      box-shadow:0 1px 6px rgba(0,0,0,.05);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      transition:transform .2s,box-shadow .2s;
+      border:1px solid #e5e7eb;
+    }
+    .card:hover{
+      transform:translateY(-3px);
+      box-shadow:0 4px 12px rgba(0,0,0,.08);
+    }
+    .card h3{
+      font-size:1.05rem;
+      font-weight:600;
+      margin-bottom:.5rem;
+    }
+    .card .meta{
+      color:var(--gray);
+      font-size:.85rem;
+      margin-bottom:1rem;
+    }
+    .card a.external{
+      margin-top:auto;
+      font-weight:600;
+      display:inline-flex;
+      align-items:center;
+      gap:.25rem;
+    }
+    /* Footer */
+    footer{
+      background:#fff;
+      padding:2rem 1.5rem;
+      border-top:1px solid #e5e7eb;
+      text-align:center;
+      color:var(--gray);
+      font-size:.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-wrap">
+      <div class="logo">worxogo</div>
+      <nav>
+        <ul>
+          <li><a href="#partnerships">Partnerships</a></li>
+          <li><a href="#media">Media&nbsp;&#38; News</a></li>
+          <li><a href="#awards">Awards</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="btn-kit" aria-label="Download media kit">Media Kit</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Newsroom &amp; Media Hub</h1>
+    <p>Your one‑stop source for worxogo&rsquo;s latest partnerships, press mentions, and recognitions.
+       Download assets, explore coverage, or reach out to our PR team&mdash;it&rsquo;s all here.</p>
+  </section>
+
+  <!-- Partnerships -->
+  <section id="partnerships">
+    <h2 class="section-title"><i class="fa-solid fa-handshake"></i> Strategic&nbsp;Partnerships</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Genpact × worxogo: Nudge Coach drives global operational efficiencies</h3>
+        <p class="meta">Press&nbsp;Release&nbsp;&middot;&nbsp;March&nbsp;2023</p>
+        <a class="external" href="https://www.einnews.com/pr_news/622267601/behavior-startup-worxogo-partners-with-genpact-on-nudge-coach-to-drive-operational-efficiencies-for-global-teams" target="_blank" rel="noopener">
+          Read more <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>EXL’s NerveHub™ now features worxogo’s Nudge Coach for next‑gen workforce</h3>
+        <p class="meta">Product&nbsp;Announcement&nbsp;&middot;&nbsp;2022</p>
+        <a class="external" href="https://www.exlservice.com/services-and-solutions/digital-and-ai/digital-solutions/exl-nerve-hub" target="_blank" rel="noopener">
+          Read more <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>worxogo selected as SAP&nbsp;Startup Accelerator Partner&nbsp;2020</h3>
+        <p class="meta">Program&nbsp;Milestone&nbsp;&middot;&nbsp;2020</p>
+        <a class="external" href="https://www.businessworld.in/article/sap-startup-studio-announces-the-launch-of-its-fourth-cohort--321483" target="_blank" rel="noopener">
+          Read more <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Media Mentions -->
+  <section id="media">
+    <h2 class="section-title"><i class="fa-solid fa-newspaper"></i> Media&nbsp;Mentions&nbsp;&amp;&nbsp;News</h2>
+    <div class="cards">
+
+      <article class="card">
+        <h3>NASSCOM Emerge 50: worxogo ranks Top 8 in Enterprise SaaS</h3>
+        <p class="meta">Industry&nbsp;List&nbsp;&middot;&nbsp;2019</p>
+        <a class="external" href="https://nasscom.in/emerge50/pdf/emerge50-2019.pdf" target="_blank" rel="noopener">
+          View PDF <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>Microsoft & GA Partners showcase worxogo’s AI for BFSI sector</h3>
+        <p class="meta">Event&nbsp;Coverage</p>
+        <a class="external" href="https://varindia.com/news/microsoft-along-with-ga-partners-enables-startups-to-showcase-their-solutions" target="_blank" rel="noopener">
+          Read story <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>Co‑founder Sudha spotlighted in Medium’s “Women in AI” series</h3>
+        <p class="meta">Interview</p>
+        <a class="external" href="https://medium.com/authority-magazine/sudha-bhamidipati-on-why-we-need-to-take-a-fresh-look-at-the-way-work-gets-done-in-organizations-1f5f95b978fa" target="_blank" rel="noopener">
+          Read feature <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>Forbes: “3 Ways to Human‑Centric AI” cites worxogo’s approach</h3>
+        <p class="meta">Thought&nbsp;Leadership&nbsp;&middot;&nbsp;2018</p>
+        <a class="external" href="https://www.forbes.com/sites/cognitiveworld/2018/12/12/3-ways-to-human-centric-ai/#7aecf57a4a38" target="_blank" rel="noopener">
+          Read article <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>worxogo raises ₹16.5&nbsp;Cr Series&nbsp;A from Inventus&nbsp;India & Ideaspring</h3>
+        <p class="meta">Funding&nbsp;News&nbsp;&middot;&nbsp;2018</p>
+        <a class="external" href="https://www.thehindubusinessline.com/companies/worxogo-raises-165-crore-in-series-a-funding-by-inventus-india-ideaspring-capital/article25239626.ece" target="_blank" rel="noopener">
+          Read more <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Awards & Recognition -->
+  <section id="awards">
+    <h2 class="section-title"><i class="fa-solid fa-trophy"></i> Awards&nbsp;&amp;&nbsp;Recognition</h2>
+    <div class="cards">
+
+      <article class="card">
+        <h3>KPMG Global Tech Innovator – India&nbsp;Finalist</h3>
+        <p class="meta">2021</p>
+        <a class="external" href="https://www.linkedin.com/posts/kpmgindia_techinnovator-startups-entrepreneur-activity-6831112245955633152-h-4k?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA_tb_QBuljXgIoZurDwlWpz26a4niv751I" target="_blank" rel="noopener">
+          View post <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>Winner&nbsp;&ndash; Accenture Ventures Challenge</h3>
+        <p class="meta">2021</p>
+        <a class="external" href="https://yourstory.com/2021/10/meet-the-winners-of-accenture-venture-challenge-2021" target="_blank" rel="noopener">
+          Read more <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>Capgemini&nbsp;&amp;&nbsp;Efma Financial NewTech Watchlist</h3>
+        <p class="meta">2021</p>
+      </article>
+
+      <article class="card">
+        <h3>Globant Awards – Women&nbsp;That&nbsp;Build&nbsp;Edition (National Winner)</h3>
+        <p class="meta">2020</p>
+        <a class="external" href="https://stayrelevant.globant.com/en/be-kind/women-that-build/national-winners-women-that-build/?mode=list" target="_blank" rel="noopener">
+          View post <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>BCG India Insurtech Report&nbsp;– Key&nbsp;Digital&nbsp;Transformation Player</h3>
+        <p class="meta">2020</p>
+        <a class="external" href="https://www.bcg.com/india-insurtech-landscape-and-trends" target="_blank" rel="noopener">
+          Read report <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>Winner – HDFC Digital Innovation Summit</h3>
+        <p class="meta">2019</p>
+        <a class="external" href="https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/gujarat-based-start-up-among-four-winners-at-hdfcs-digital-innovation-summit/articleshow/67871819.cms" target="_blank" rel="noopener">
+          View coverage <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>Regional Winner – IBM&nbsp;SmartCamp</h3>
+        <p class="meta">2015</p>
+        <a class="external" href="https://inc42.com/buzz/smartcamp-bangalore-regional-winners/" target="_blank" rel="noopener">
+          View article <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>Media&nbsp;query?&nbsp;Reach us at&nbsp;<a href="mailto:press@worxogo.com">press@worxogo.com</a></p>
+  </footer>
+</body>
+</html>

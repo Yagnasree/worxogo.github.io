@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Pharma Field-Sales | Worxogo Nudge Coach</title>
+
+  <!--  ▾▾ 1.  MINI CSS  ▾▾  -->
+  <style>
+    /* reset & tokens */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;font-family:Inter,-apple-system,Segoe UI,sans-serif}
+    :root{
+      --w-green:#008060;
+      --w-blue:#0066ff;
+      --w-gray:#555;
+      --bg-light:#f7f9fc;
+      --radius:12px;
+    }
+    body{line-height:1.5;color:#222;background:#fff}
+    a{color:var(--w-blue);text-decoration:none}
+    img{max-width:100%;height:auto}
+    section{padding:4rem 1rem}
+    .container{width:min(1200px,90%);margin:auto}
+    h1,h2,h3,h4{font-weight:700;color:#000;margin-bottom:.5em}
+    h1{font-size:2.6rem} h2{font-size:2rem} h3{font-size:1.35rem}
+    p{margin:.25em 0 1em}
+    /* layout helpers */
+    .grid{display:grid;gap:2rem}
+    .grid-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .stats{background:var(--bg-light);border-radius:var(--radius);padding:2rem;text-align:center}
+    .stat-num{font-size:2.4rem;font-weight:700;color:var(--w-green)}
+    .btn{display:inline-block;padding:.9rem 1.8rem;border-radius:var(--radius);font-weight:600}
+    .btn-primary{background:var(--w-blue);color:#fff}
+    .btn-secondary{background:var(--w-green);color:#fff}
+    /* hero */
+    .hero{background:url('https://images.unsplash.com/photo-1581093531979-43e07f1a13fa?auto=format&fit=crop&w=1920&q=60') center/cover no-repeat;color:#fff;padding:6rem 1rem 7rem}
+    .hero h1 span{display:block;color:#ffd700}
+    /* logos */
+    .logos{justify-content:center;align-items:center;gap:2rem;filter:grayscale(1);opacity:.8}
+    .logos img{max-height:48px}
+    /* cards */
+    .card{background:#fff;border:1px solid #e0e5ec;border-radius:var(--radius);padding:1.5rem;transition:transform .25s}
+    .card:hover{transform:translateY(-4px)}
+    /* testimonials */
+    blockquote{background:var(--bg-light);border-left:6px solid var(--w-green);padding:1.5rem;border-radius:var(--radius);font-style:italic}
+    cite{display:block;margin-top:.7rem;font-weight:600;color:var(--w-gray)}
+    /* ROI calculator */
+    #roi-wrap{background:#fafafa;border-radius:var(--radius);padding:2rem}
+    #roi-result{font-size:2rem;font-weight:700;color:var(--w-blue)}
+    /* CTA footer */
+    .cta{background:var(--w-blue);color:#fff;text-align:center;padding:3rem 1rem}
+  </style>
+</head>
+
+<body>
+
+  <!-- ▾▾ 2.  HERO ▾▾ -->
+  <header class="hero">
+    <div class="container">
+      <h1><span>Make your MRs superstars</span> with a Behavioral AI Nudge Coach</h1>
+      <p>Build better work habits, boost doctor engagement &amp; drive prescription growth – all without extra manager effort.</p>
+      <a href="#demo" class="btn btn-primary">Talk to an expert</a>
+    </div>
+  </header>
+
+  <!-- ▾▾ 3. TRUST LOGOS (proof-first) ▾▾ -->
+  <section>
+    <div class="container grid logos">
+      <img src="https://www.cipla.com/themes/cipla/logo.svg" alt="Cipla logo">
+      <img src="https://www.abbott.com/content/dam/corp/abbott/global/logos/logo.png" alt="Abbott logo">
+      <img src="https://www.pfizer.com/profiles/pfecpfizercomus_profile/themes/pfcorporate_helix/public/assets/images/Pfizer_Logo_Blue_RGB.svg" alt="Pfizer logo">
+      <img src="https://www.alkemlabs.com/assets/images/logo.png" alt="Alkem logo">
+    </div>
+  </section>
+
+  <!-- ▾▾ 4. CHALLENGES GRID  ▾▾ -->
+  <section id="challenges">
+    <div class="container">
+      <h2>Solve today’s pharma-sales challenges</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Doctor availability</h3>
+          <p>Increase early-month doctor visits &amp; territory coverage.</p>
+        </div>
+        <div class="card">
+          <h3>Doctor attention</h3>
+          <p>Boost HCP interactions by nudging reps to use digital detailing assets.</p>
+        </div>
+        <div class="card">
+          <h3>Omni-channel engagement</h3>
+          <p>Seamlessly weave video calls &amp; WhatsApp into the MR<>doctor workflow.</p>
+        </div>
+        <div class="card">
+          <h3>Learning &amp; development</h3>
+          <p>Reinforce brand talking points and refresh knowledge just-in-time.</p>
+        </div>
+        <div class="card">
+          <h3>Future of work</h3>
+          <p>Make reps self-motivated with behavior-led nudges – no micromanagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ▾▾ 5. PRODUCT STORYBOARD  ▾▾ -->
+  <section>
+    <div class="container grid grid-2">
+      <div>
+        <h2>Unlock your Medical Reps’ potential – end-to-end</h2>
+        <ul>
+          <li><strong>Nudge Coach for Reps –</strong> highlights today’s priority action &amp; celebrates wins.</li>
+          <li><strong>Manager bird’s-eye view –</strong> real-time insights show who needs coaching now.</li>
+          <li><strong>Behavior lens for Leaders –</strong> analytics predict future-ready talent &amp; risk.</li>
+        </ul>
+        <a href="#demo" class="btn btn-secondary">Get a demo</a>
+      </div>
+      <div>
+        <img src="https://www.worxogo.com/wp-content/uploads/elementor/thumbs/IncentivePharma_1-q65rz3av3ceze2wqh4m0dornvoh6y2fsc8yltm6aj6.jpg" alt="Incentive Nudge Coach screenshot">
+        <p style="font-size:.85rem;color:var(--w-gray);text-align:center;margin-top:.5rem">Mobile-first coaching experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ▾▾ 6. VISIBLE IMPACT STATS  ▾▾ -->
+  <section style="background:var(--bg-light)">
+    <div class="container grid grid-2">
+      <div class="stats">
+        <p class="stat-num">49% more</p>
+        <p>MRs hit their detailing-time benchmark</p>
+      </div>
+      <div class="stats">
+        <p class="stat-num">44% more</p>
+        <p>MRs met POB value targets for focus brands</p>
+      </div>
+      <div class="stats">
+        <p class="stat-num">28% ↑</p>
+        <p>in digital doctor coverage</p>
+      </div>
+      <div class="stats">
+        <p class="stat-num">23% ↑</p>
+        <p>in focus-brand prescriptions</p>
+      </div>
+      <div class="stats" style="grid-column:span 2">
+        <p class="stat-num">18% ↑</p>
+        <p>in monthly sales for a $30 Bn healthcare major</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ▾▾ 7. ROI CALCULATOR (lite) ▾▾ -->
+  <section>
+    <div class="container">
+      <h2>See your potential ROI</h2>
+      <div id="roi-wrap">
+        <label for="team">Reps in your team: <span id="team-val">50</span></label>
+        <input type="range" id="team" min="10" max="500" step="10" value="50" style="width:100%;margin:1rem 0">
+        <p>Based on Worxogo benchmarks, you could unlock:</p>
+        <p id="roi-result">≈ ₹ 7.2 Cr incremental revenue / year*</p>
+        <p style="font-size:.75rem;color:var(--w-gray)">* Assumes ₹ 1 L / rep / month additional sales (18% uplift):contentReference[oaicite:1]{index=1}</p>
+        <a href="#demo" class="btn btn-primary">Calculate for my data</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ▾▾ 8. CASE STUDY & PLAYBOOK  ▾▾ -->
+  <section class="container grid grid-2">
+      <div>
+        <h2>Case study: 18 % sales lift</h2>
+        <p>A $30 Bn healthcare major used daily personalized nudges to raise call productivity &amp; brand detailing – driving an 18 % jump in net sales within three months.</p>
+        <a href="https://www.worxogo.com/wp-content/uploads/pharma_case_study.pdf" class="btn btn-secondary">Download case study PDF</a>
+      </div>
+      <div>
+        <h2>Pharma Sales Playbook</h2>
+        <p>Get our step-by-step guide to building a high-performing, future-ready field force.</p>
+        <form action="https://go.worxogo.com/pharma-playbook" method="post" style="display:grid;gap:.5rem">
+          <input type="email" name="email" placeholder="Work email" required style="padding:.8rem;border:1px solid #ccc;border-radius:var(--radius)">
+          <button class="btn btn-primary" type="submit">Get the playbook</button>
+        </form>
+      </div>
+  </section>
+
+  <!-- ▾▾ 9. TESTIMONIALS  ▾▾ -->
+  <section style="background:var(--bg-light)">
+    <div class="container grid grid-2">
+      <blockquote>
+        “The ability to remotely nudge a rep based on what motivates him is very empowering. This platform provides real-time personalized coaching.” 
+        <cite>— Sumeet Chandna, Head Digital Transformation, Cipla India</cite>
+      </blockquote>
+      <blockquote>
+        “Nudges help you drive those behaviors so that you can deliver the numbers.” 
+        <cite>— Sameer Srivastava, VP, Alkem Laboratories</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ▾▾ 10. FINAL CTA  ▾▾ -->
+  <section class="cta" id="demo">
+    <h2 style="margin-bottom:1rem">Build your high-performing pharma-sales team today</h2>
+    <a href="mailto:sales@worxogo.com?subject=Pharma%20Sales%20Demo" class="btn btn-secondary">Book my demo</a>
+  </section>
+
+  <!-- ▾▾ 11.  MINI JS for ROI widget ▾▾ -->
+  <script>
+    const slider=document.getElementById('team');
+    const teamVal=document.getElementById('team-val');
+    const roi=document.getElementById('roi-result');
+    const revPerRep=100000; // INR / month assumed
+    slider.addEventListener('input',()=>{
+      teamVal.textContent=slider.value;
+      const annual=((slider.value*revPerRep*18/100)*12).toLocaleString('en-IN');
+      roi.textContent=`≈ ₹ ${annual} incremental revenue / year*`;
+    });
+  </script>
+</body>
+</html>
